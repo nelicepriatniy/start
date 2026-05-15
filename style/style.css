@@ -413,12 +413,24 @@ nav {
 }
 .nums .h1-heading {
   font-weight: 400;
+  font-size: 120rem;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+}
+.gradient-text {
+  width: 390rem;
+  height: 190rem;
+}
+
+.gradient-text text {
+  font-weight: 400;
   font-size: 160rem;
   line-height: 120%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
 }
-
 .keyses .container {
   display: flex;
   flex-direction: column;
