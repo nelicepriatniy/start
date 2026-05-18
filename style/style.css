@@ -460,7 +460,7 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 120rem;
+  gap: 140rem;
 }
 .keyses .keys-zadacha {
   max-width: 900rem;
@@ -500,6 +500,7 @@ nav {
 }
 .keyses .keys-item:nth-child(even) .keys-img {
   left: 0;
+  top: -119rem;
 }
 .keyses .keys-item .keyses-info {
   border: 0.5rem solid rgba(255, 255, 255, 0.7);
@@ -508,15 +509,12 @@ nav {
   width: 1430rem;
   background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
 }
-.keyses .keys-item:first-child .keys-img {
-  top: -190rem;
-}
 .keyses .keys-item .keys-img {
   position: absolute;
   width: 742rem;
   height: 922rem;
   top: -119rem;
-  right: -122rem;
+  right: 0rem;
 }
 .keyses .keys-item .h3-heading {
   margin-bottom: 40rem;
@@ -598,4 +596,61 @@ footer .btm-a {
   font-size: 20rem;
   text-transform: uppercase;
   color: #fff;
+}
+
+.bred-crumbs {
+  padding: 40rem 0;
+}
+.bred-crumbs .bred-crumbs-item {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.bred-crumbs .container {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.keyses-page-heading {
+  width: 100%;
+}
+.keyses-page-heading .keyses-heading {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 70rem;
+  background: linear-gradient(67deg, #fff 0%, #d0d4de 49.72%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10rem;
+}
+.keyses-page-heading .desc {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 24rem;
+  line-height: 130%;
+  background: linear-gradient(67deg, #fff 0%, #d0d4de 49.72%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40rem;
+}
+.keyses-page-heading .categories-wrapper {
+  display: flex;
+  gap: 20rem;
+  margin-bottom: 200rem;
+}
+.keyses-page-heading .categories-wrapper .category-item {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0.5rem solid rgba(255, 255, 255, 0.7);
+  border-radius: 100rem;
+  padding: 10rem 20rem;
+  background: rgba(255, 255, 255, 0.05);
 }/*# sourceMappingURL=style.css.map */

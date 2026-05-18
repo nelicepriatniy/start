@@ -530,7 +530,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 120rem;
+    gap: 140rem;
   }
 
   .keys-zadacha {
@@ -579,6 +579,7 @@ nav {
 
       .keys-img {
         left: 0;
+        top: -119rem;
       }
     }
 
@@ -592,7 +593,6 @@ nav {
 
     &:first-child {
       .keys-img {
-        top: -190rem;
       }
     }
 
@@ -601,7 +601,7 @@ nav {
       width: 742rem;
       height: 922rem;
       top: -119rem;
-      right: -122rem;
+      right: 0rem;
     }
 
     .h3-heading {
@@ -702,4 +702,64 @@ footer {
     text-transform: uppercase;
     color: $white;
   }
+}
+
+.bred-crumbs {
+  padding: 40rem 0;
+  .bred-crumbs-item {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 20rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+  }
+}
+
+.keyses-page-heading {
+  width: 100%;
+  .keyses-heading {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 70rem;
+    background: linear-gradient(67deg, #fff 0%, #d0d4de 49.72%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10rem;
+  }
+  .desc {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 24rem;
+    line-height: 130%;
+    background: linear-gradient(67deg, #fff 0%, #d0d4de 49.72%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40rem;
+  }
+  .categories-wrapper {
+    display: flex;
+    gap: 20rem;
+    margin-bottom: 200rem;
+    .category-item {
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 400;
+      font-size: 20rem;
+      text-transform: uppercase;
+      color: $white;
+      border: 0.50rem solid rgba(255, 255, 255, 0.7);
+      border-radius: 100rem;
+      padding: 10rem 20rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+  }
+
 }
