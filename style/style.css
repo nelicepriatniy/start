@@ -91,6 +91,7 @@ header .logo img {
   padding: 23rem 51rem;
   background: linear-gradient(219deg, #7327f0 23.08%, #2685ff 100%);
   border-radius: 100rem;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -170,6 +171,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 10rem;
+  width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 20rem;
 }
@@ -256,6 +258,7 @@ nav {
 }
 .hero .h4-heading {
   margin-bottom: 40rem;
+  line-height: 120%;
 }
 .hero .h4-heading span {
   background: linear-gradient(219deg, #7327f0 23.08%, #2685ff 100%);
@@ -264,6 +267,7 @@ nav {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   font-size: 36rem;
+  line-height: 120%;
 }
 .hero .hero-r-wrapper {
   margin-bottom: 40rem;
@@ -279,6 +283,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .hero .hero-r-wrapper .hero-r-item .hero-r-item-heading {
   font-weight: 500;
@@ -408,19 +413,21 @@ nav {
 .nums {
   padding-bottom: 105rem;
 }
+
 .nums .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20rem;
 }
+
 .nums .h1-heading {
   font-weight: 400;
   font-size: 120rem;
   line-height: 120%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-
 }
+
 .gradient-text {
   width: 390rem;
   height: 190rem;
@@ -433,6 +440,7 @@ nav {
   letter-spacing: -0.04em;
   text-transform: uppercase;
 }
+
 .keyses .container {
   display: flex;
   flex-direction: column;
@@ -541,6 +549,9 @@ footer .top {
   align-items: center;
   justify-content: space-between;
 }
+footer .top svg {
+  width: 456rem;
+}
 footer .seti {
   display: flex;
   align-items: center;
@@ -552,7 +563,7 @@ footer .seti-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(67.59% 67.59% at 50.12% 50.13%, #111 0%, #2b2b2b 100%);
+  background: radial-gradient(67.59% 67.59% at 50.12% 50.13%, rgba(17, 17, 17, 0.4392156863) 0%, rgba(43, 43, 43, 0.4196078431) 100%);
   border: 1rem solid #7327f0;
 }
 footer .seti-item:nth-child(3) {
@@ -571,7 +582,7 @@ footer .seti-item span {
 }
 footer .seti-heading {
   font-weight: 500;
-  font-size: 90px;
+  font-size: 90rem;
   line-height: 100%;
   color: #fff;
 }
@@ -584,9 +595,7 @@ footer .btm {
 }
 footer .btm-a {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 20rem;
   text-transform: uppercase;
   color: #fff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
