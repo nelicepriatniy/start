@@ -673,8 +673,28 @@ footer .btm-a {
 }
 
 .keys-block .container {
+  position: relative;
+}
+.keys-block .container::after {
+  content: "";
+  display: block;
+  width: 1807rem;
+  height: 613rem;
+  position: absolute;
+  z-index: 1;
+  filter: blur(200rem);
+  background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.keys-block .container {
   display: flex;
   gap: 300rem;
+}
+.keys-block .keys-b-l, .keys-block .keys-b-r {
+  position: relative;
+  z-index: 2;
 }
 .keys-block .keys-b-l {
   border: 0.5rem solid rgba(255, 255, 255, 0.7);
@@ -735,6 +755,7 @@ footer .btm-a {
 .keys-block .keys-b-r .keys-b-t .black-button, .keys-block .keys-b-r .keys-b-t .blue-button {
   width: 100%;
   text-align: center;
+  border-radius: 15rem;
 }
 .keys-block .keys-b-r .keys-b-t .b-item .heading {
   font-family: "Helvetica Neue", sans-serif;
@@ -780,6 +801,7 @@ footer .btm-a {
 .keys-block .keys-b-r .keys-b-b .blue-button {
   width: 100%;
   text-align: center;
+  border-radius: 15rem;
 }
 
 .solution-block {
