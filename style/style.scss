@@ -780,7 +780,9 @@ footer {
 }
 
 .keys-block {
-  
+  .blue-button {
+    background: linear-gradient(180deg, #7327f0 23.08%, #2685ff 100%);
+  }
   .container {
     position: relative;
     &::after {
