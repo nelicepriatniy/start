@@ -211,6 +211,7 @@ nav {
 
   .h1-heading {
     margin-bottom: 40rem;
+    max-width: 810rem;
 
     span {
       color: rgba(255, 255, 255, 0.7);
@@ -266,8 +267,8 @@ nav {
           align-items: center;
           border-radius: 100rem;
           position: absolute;
-          top: -13rem;
-          right: -10rem;
+          top: -11rem;
+          right: -9rem;
 
           &::after {
             background: linear-gradient(219deg, #7327f0 23.08%, #2685ff 100%);
@@ -495,13 +496,14 @@ nav {
 
 }
 .gradient-text {
+  padding-top: 3rem;
   font-size: 160rem;
   font-weight: bold;
-  background: linear-gradient(219deg, #7327f0 0%, #8b91ff 50.47%, #2685ff 100%);
+  background: linear-gradient(219deg, #7327f0 23.08%, #2685ff 100%);
     background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #111;
-  -webkit-text-stroke: 2rem transparent;
+  -webkit-text-stroke: 3rem transparent;
   color: transparent;  
 }
 
@@ -558,6 +560,20 @@ nav {
   .keys-item {
     position: relative;
 
+&::before {
+  content: '';
+  display: block;
+  width: 1807rem;
+  height: 613rem;
+  position: absolute;
+  z-index: 1;
+  filter: blur(200rem);
+  background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
     &:nth-child(even) {
       .keyses-info {
         margin-left: 290rem;
@@ -588,12 +604,10 @@ nav {
       padding: 100rem;
       width: 1430rem;
       background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+      position: relative;
+      z-index: 2
     }
 
-    &:first-child {
-      .keys-img {
-      }
-    }
 
     .keys-img {
       position: absolute;
@@ -601,6 +615,7 @@ nav {
       height: 922rem;
       top: -119rem;
       right: 0rem;
+      z-index: 3;
     }
 
     .h3-heading {
@@ -704,7 +719,7 @@ footer {
 }
 
 .bred-crumbs {
-  padding: 40rem 0;
+  padding-bottom: 40rem;
   .bred-crumbs-item {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 400;
@@ -746,12 +761,12 @@ footer {
   .categories-wrapper {
     display: flex;
     gap: 20rem;
-    margin-bottom: 200rem;
+    margin-bottom: 130rem;
     .category-item {
       font-family: "Helvetica Neue", sans-serif;
       font-weight: 400;
       font-size: 20rem;
-      text-transform: uppercase;
+      text-transform: uppercase;  
       color: $white;
       border: 0.50rem solid rgba(255, 255, 255, 0.7);
       border-radius: 100rem;
@@ -761,4 +776,178 @@ footer {
 
   }
 
+}
+
+.keys-block {
+  .container {
+    display: flex;
+    gap: 300rem;
+  }
+  .keys-b-l {
+    border: 0.50rem solid rgba(255, 255, 255, 0.7);
+  border-radius: 50rem;
+  padding: 70rem;
+  width: 857rem;
+  height: 658rem;
+  position: relative;
+  background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .keys-img {
+    position: absolute;
+    width: 612rem;
+    height: 761rem;  
+    top: -66rem;
+    right: -290rem;
+  }
+  .keys-heading {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 50rem;
+color: $white;
+max-width: 450rem;
+  }
+  .tags-wrapper {
+    display: flex;
+    gap: 10rem;
+    margin-top: 40rem;
+    flex-wrap: wrap;
+    max-width: 450rem;
+
+    .tag-item {
+      font-family: "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        font-size: 20rem;
+        text-transform: uppercase;
+        color: $white;
+        border: 0.50rem solid rgba(255, 255, 255, 0.7);
+        border-radius: 100rem;
+        padding: 10rem 20rem;
+        background: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+  .keys-b-r {
+    width: 560rem;
+
+  .keys-b-t {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    border: 0.50rem solid rgba(255, 255, 255, 0.7);
+border-radius: 30rem;
+
+padding: 40rem;
+background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+.black-button, .blue-button {
+  width: 100%;
+  text-align: center;
+}
+    .b-item {
+      .heading {
+        font-family: "Helvetica Neue", sans-serif;
+font-weight: 300;
+font-size: 24rem;
+line-height: 130%;
+color: rgba(255, 255, 255, 0.7);
+margin-bottom: 10rem;
+      }
+      .text {
+
+        font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 30rem;
+color: $white;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 10rem;
+    }
+  }
+  .keys-b-b {
+    
+    border: 0.50rem solid rgba(255, 255, 255, 0.7);
+border-radius: 30rem;
+margin-top: 10rem;
+padding: 40rem;
+background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+.heading {
+  font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 30rem;
+color: $white;
+}
+.text {
+  font-family: "Helvetica Neue", sans-serif;
+font-weight: 300;
+font-size: 24rem;
+line-height: 130%;
+color: rgba(255, 255, 255, 0.7);
+margin-top: 10rem;
+margin-bottom: 20rem;
+}
+.blue-button {
+  width: 100%;
+  text-align: center;
+}
+  }
+  }
+}
+
+.solution-block {
+  margin-top: 133rem;
+  margin-bottom: 80rem;
+  .container {
+    display: flex;
+    gap: 20rem;
+  }
+  .task, .solution {
+    .heading {
+      font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 30rem;
+color: $white;
+margin-bottom: 20rem;
+    }
+    .text {
+      font-family: "Helvetica Neue", sans-serif;
+font-weight: 300;
+font-size: 24rem;
+line-height: 130%;
+color: $white;
+    }
+  }
+}
+
+.need {
+  margin-bottom: 100rem;
+  .container{
+    border: 0.50rem solid rgba(255, 255, 255, 0.7);
+    border-radius: 30rem;
+    padding: 40rem;
+    background: linear-gradient(219deg, rgba(115, 39, 240, 0.1) 0%, rgba(139, 145, 255, 0.1) 50.47%, rgba(38, 133, 255, 0.1) 100%);
+  }
+  .heading {
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 500;
+font-size: 30rem;
+color: $white;
+margin-bottom: 10rem;
+  }
+  .text {
+
+    font-family: "Helvetica Neue", sans-serif;
+font-weight: 300;
+font-size: 24rem;
+line-height: 130%;
+color: rgba(255, 255, 255, 0.7);
+
+  }
+  .blue-button {
+    margin-top: 20rem;
+    border-radius: 15rem;
+  
+  }
 }
