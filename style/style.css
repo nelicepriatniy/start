@@ -429,16 +429,14 @@ nav {
 }
 
 .gradient-text {
-  width: 390rem;
-  height: 190rem;
-}
-
-.gradient-text text {
-  font-weight: 400;
   font-size: 160rem;
-  line-height: 120%;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(219deg, #7327f0 0%, #8b91ff 50.47%, #2685ff 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #111;
+  -webkit-text-stroke: 2rem transparent;
+  color: transparent;
 }
 
 .keyses .container {
