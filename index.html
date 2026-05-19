@@ -37,7 +37,7 @@
         </a>
         <a href="tel: 8 (910) 193-05-95" class="tel">8 (910) 193-05-95</a>
         <a href="mailto: marketing.start@mail.ru" class="mail">marketing.start@mail.ru</a>
-        <button class="blue-button">Заказать</button>
+        <button class="blue-button form-popup-open">Заказать</button>
       </div>
     </div>
   </header>
@@ -447,9 +447,32 @@
     </div>
   </footer>
 
+  <div class="form-popup">
+    <svg class="form-close" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_5967_1567)">
+        <path d="M26.9405 0H26.0604C11.6676 0 0 11.6676 0 26.0604C0 40.4532 11.6676 52.1208 26.0604 52.1208H26.9405C41.3333 52.1208 53.0009 40.4532 53.0009 26.0604C53.0009 11.6676 41.3333 0 26.9405 0Z" fill="white" fill-opacity="0.05" />
+        <path d="M15.4375 36.3733L37.3368 14.474" stroke="white" stroke-width="2" />
+        <path d="M15.6641 14.2526L37.5634 36.1519" stroke="white" stroke-width="2" />
+      </g>
+    </svg>
+    <p class="form-heading">Оставьте заявку</p>
+    <p class="form-text">и мы свяжемся с вами!</p>
+    <form action="" class="form">
+      <label class="input-label">
+        <p class="label-heading">Имя</p>
+        <input type="text" class="input" placeholder="Иван">
+      </label>
+      <label class="input-label">
+        <p class="label-heading">Номер телефона</p>
+        <input type="text" class="input" placeholder="+7(911)111 11-11">
+      </label>
+      <button class="blue-button">Отправить</button>
+    </form>
+  </div>
+  <div class="offset"></div>
 
-  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
 </body>
 
 </html>
